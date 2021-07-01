@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_columnSpan="3"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/amita_bold"
+        android:text="TIC TAC TOE"
+
+        android:textAlignment="center"
+        android:textColor="#F30505"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <EditText
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/amaranth_italic"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="true"
+        android:hint=" Enter Player 2 Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="212dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/name"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="Player 1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/amaranth_italic"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="true"
+        android:hint=" Enter Player 1 Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/name"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="Player 2"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/alfa_slab_one"
+        android:onClick="play"
+
+        android:text="PLAY"
+        app:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/amaranth_italic"
+        android:gravity="center"
+        android:text="*Player 1 :'X' Player 2: '0'*"
+        android:textColor="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
